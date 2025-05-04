@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ITActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Особисті дані"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_marginBottom="8dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ПІБ">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextFullName_it"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Вік">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextAge_it"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Бажана зарплатня (USD)">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextSalary_it"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Питання для перевірки профпридатності"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupQuestion1_it"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Яка основна перевага використання Git для контролю версій?"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"/>
+            <RadioButton
+                android:id="@+id/radioButtonQ1A_it"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Централізоване зберігання коду"/>
+            <RadioButton
+                android:id="@+id/radioButtonQ1B_it"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Розподілена архітектура та можливість роботи offline"/>
+            <RadioButton
+                android:id="@+id/radioButtonQ1C_it"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Автоматичне розгортання проекту"/>
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radioGroupQuestion2_it"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Що таке Dependency Injection в контексті розробки ПЗ?"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"/>
+            <RadioButton
+                android:id="@+id/radioButtonQ2A_it"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Процес передачі залежностей об'єкту ззовні, а не створення їх всередині об'єкта"/>
+            <RadioButton
+                android:id="@+id/radioButtonQ2B_it"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Спосіб організації коду за функціональними блоками"/>
+            <RadioButton
+                android:id="@+id/radioButtonQ2C_it"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Техніка оптимізації швидкодії додатку"/>
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radioGroupQuestion3_it"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Який принцип SOLID означає, що клас повинен мати лише одну причину для зміни?"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"/>
+            <RadioButton
+                android:id="@+id/radioButtonQ3A_it"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Liskov Substitution Principle"/>
+            <RadioButton
+                android:id="@+id/radioButtonQ3B_it"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Single Responsibility Principle"/>
+            <RadioButton
+                android:id="@+id/radioButtonQ3C_it"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Interface Segregation Principle"/>
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radioGroupQuestion4_it"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Що таке RESTful API?"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"/>
+            <RadioButton
+                android:id="@+id/radioButtonQ4A_it"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Архітектурний стиль для створення веб-сервісів, що використовує HTTP-методи"/>
+            <RadioButton
+                android:id="@+id/radioButtonQ4B_it"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Протокол для обміну даними в реальному часі"/>
+            <RadioButton
+                android:id="@+id/radioButtonQ4C_it"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Бібліотека для роботи з базами даних"/>
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radioGroupQuestion5_it"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Який підхід до тестування передбачає перевірку окремих компонентів програми?"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"/>
+            <RadioButton
+                android:id="@+id/radioButtonQ5A_it"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Інтеграційне тестування"/>
+            <RadioButton
+                android:id="@+id/radioButtonQ5B_it"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Системне тестування"/>
+            <RadioButton
+                android:id="@+id/radioButtonQ5C_it"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Юніт-тестування"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Додаткові навички"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxExperience_it"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Досвід роботи від 2 років" />
+
+        <CheckBox
+            android:id="@+id/checkBoxTeamwork_it"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Навички командної розробки" />
+
+        <CheckBox
+            android:id="@+id/checkBoxTravel_it"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Готовність до відряджень" />
+
+        <Button
+            android:id="@+id/buttonSubmit_it"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Здати тест"
+            android:enabled="true"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/textViewResult_it"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text=""
+            android:visibility="gone"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+        <TextView
+            android:id="@+id/textViewContacts_it"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Контакти компанії: itcompany@gmail.com"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+</ScrollView>
