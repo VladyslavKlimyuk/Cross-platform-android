@@ -26,5 +26,11 @@
             android:exported="false"/>
         <activity android:name=".ITActivity"
             android:exported="false"/>
+        <activity android:name=".CarActivity"
+            android:theme="@style/Theme.MyApplication.NoActionBar"
+            android:exported="false"/>
+        <activity android:name=".SearchActivity"
+            android:theme="@style/Theme.MyApplication.NoActionBar"
+            android:exported="false"/>
     </application>
 </manifest>

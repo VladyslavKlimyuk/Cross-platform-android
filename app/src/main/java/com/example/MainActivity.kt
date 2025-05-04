@@ -10,6 +10,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var startGameButton: Button
     private lateinit var calculatorButton: Button
     private lateinit var itInterviewButton: Button
+    private lateinit var carListButton: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         startGameButton = findViewById(R.id.startGameButton)
         calculatorButton = findViewById(R.id.calculatorButton)
         itInterviewButton = findViewById(R.id.itInterviewButton)
+        carListButton = findViewById(R.id.carListButton)
 
         startGameButton.setOnClickListener {
             val intent = Intent(this, GameActivity::class.java)
@@ -31,6 +33,11 @@ class MainActivity : AppCompatActivity() {
 
         itInterviewButton.setOnClickListener {
             val intent = Intent(this, ITActivity::class.java)
+            startActivity(intent)
+        }
+
+        carListButton.setOnClickListener {
+            val intent = Intent(this, CarActivity::class.java)
             startActivity(intent)
         }
     }
